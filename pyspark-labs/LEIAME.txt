@@ -10,3 +10,6 @@ http://localhost:9091
 
 # History Server
 http://localhost:18081
+
+# Minio (Adicao Pessoal)
+http://localhost:9001
