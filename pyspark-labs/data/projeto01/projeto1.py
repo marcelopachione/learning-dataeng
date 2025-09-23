@@ -64,3 +64,10 @@ else:
     df_clean.write.jdbc(url=sqlite_uri, table="usuarios", mode=write_mode, properties=properties)
 
     print(f"Dados gravados com sucesso no banco de dado SQLite em 'usuarios.db' usnado o mode '{write_mode}'")
+
+####
+
+# docker exec pyspark-master \
+#     spark-submit \
+#     --jars ./apps/jars/sqlite-jdbc-3.44.1.0.jar \
+#     --deploy-mode client ./data/projeto01/projeto1.py

@@ -12,8 +12,8 @@ services:
       timeout: 3s
       retries: 3
     volumes:
-      - ./dados:/opt/spark/data
-      - ./jobs:/opt/spark/apps
+      - ./data:/opt/spark/data
+      - ./apps:/opt/spark/apps
       - spark-logs:/opt/spark/spark-events
     env_file:
       - .env.spark
@@ -45,8 +45,8 @@ services:
     env_file:
       - .env.spark
     volumes:
-      - ./dados:/opt/spark/data
-      - ./jobs:/opt/spark/apps
+      - ./data:/opt/spark/data
+      - ./apps:/opt/spark/apps
       - spark-logs:/opt/spark/spark-events
   
   minio:
